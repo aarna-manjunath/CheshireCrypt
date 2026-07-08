@@ -3,8 +3,5 @@ __pycache__/
 venv/
 .venv/
 
-results/encrypted/
-results/decrypted/
-results/analysis/
-
-dataset/
+*.png
+*.jpeg
