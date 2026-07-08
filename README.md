@@ -2,6 +2,8 @@
 
 A secure image encryption system combining **Arnold Cat Map** (confusion) and the **Logistic Map** (diffusion) — a hybrid chaos approach widely cited in the cryptography literature.
 
+<img width="1537" height="412" alt="image" src="https://github.com/user-attachments/assets/f24edbea-52be-44e0-91ae-be7781db2803" />
+
 ---
 
 ## How It Works
