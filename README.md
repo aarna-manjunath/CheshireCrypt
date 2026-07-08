@@ -4,7 +4,7 @@ A secure image encryption system combining **Arnold Cat Map** (confusion) and th
 
 <img width="1537" height="412" alt="image" src="https://github.com/user-attachments/assets/f24edbea-52be-44e0-91ae-be7781db2803" />
 
----
+
 
 ## How It Works
 
@@ -30,7 +30,7 @@ Inverse Arnold Cat Map
 Original Image  (PSNR = ∞)
 ```
 
----
+
 
 ## Project Structure
 
@@ -50,7 +50,7 @@ ChaoticImageEncryption/
     └── analysis/       # {image_name}_pipeline.png, {image_name}_histograms.png, {image_name}_correlation.png, {image_name}_metrics_summary.png
 ```
 
----
+
 
 ## Installation
 
@@ -58,7 +58,7 @@ ChaoticImageEncryption/
 pip install -r requirements.txt
 ```
 
----
+
 
 ## Usage
 
@@ -79,7 +79,7 @@ python main.py --image datasets/image.png --x0 0.12345 --r 3.98765 --arnold-iter
 
 > **Secret Key** = (x0, r, arnold_iter). A tiny change in any parameter produces a completely different encrypted image and makes decryption fail.
 
----
+
 
 ## Security Metrics
 
@@ -98,7 +98,7 @@ Companion to NPCR — where NPCR counts how many pixels changed, UACI measures h
 ### PSNR — Peak Signal-to-Noise Ratio
 Measures the quality of the decrypted image compared to the original. Unlike the other metrics which evaluate the encrypted image, PSNR evaluates the round-trip — it checks whether decryption recovers the original perfectly. An acceptable value is **∞ (infinity)**, which means zero error and not a single pixel was lost or altered during encryption and decryption.
 
----
+
 
 ## Chaotic Maps
 
@@ -117,4 +117,4 @@ y' = (x + 2y)  mod N
 - Used for **confusion**: scrambles pixel positions
 - Invertible, period-based — requires the same iteration count to reverse
 
----
+
